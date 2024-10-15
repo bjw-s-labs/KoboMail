@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/bjw-s/kobomail/pkg/helpers"
 	"github.com/emersion/go-imap"
 	"github.com/emersion/go-message/mail"
 	"go.uber.org/zap"
@@ -91,13 +92,14 @@ func (msg *message) ProcessAttachments(allowedExtensions []string, destinationPa
 
 				logger.Debugw("Downloading attachment", zap.String("filename", attachmentFileName))
 
+				safeAttachmentFileName := helpers.SafeFileName(attachmentFileName)
 				attachmentContent, _ := io.ReadAll(p.Body)
 				// Write the whole body at once
-				err = os.WriteFile(destinationPath+"/"+attachmentFileName, attachmentContent, 0644)
+				err = os.WriteFile(destinationPath+"/"+safeAttachmentFileName, attachmentContent, 0644)
 				if err != nil {
 					return 0, err
 				}
-				logger.Infow("Succesfully downloaded attachment", zap.String("filename", attachmentFileName))
+				logger.Infow("Succesfully downloaded attachment", zap.String("filename", safeAttachmentFileName))
 				downloadedAttachmentCount++
 			}
 		}

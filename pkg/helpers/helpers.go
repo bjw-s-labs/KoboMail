@@ -4,6 +4,9 @@ package helpers
 import (
 	"fmt"
 	"os"
+	"path"
+	"regexp"
+	"strings"
 )
 
 // FileExists takes a string returns if it is an existing file
@@ -35,4 +38,23 @@ func DeleteFile(filename string) (bool, error) {
 		return true, nil
 	}
 	return false, fmt.Errorf("file %s does not exist", filename)
+}
+
+// SafeFileName returns safe string that can be used in file names
+func SafeFileName(str string) string {
+	name := strings.ToLower(str)
+	name = path.Clean(path.Base(name))
+	name = strings.Trim(name, " ")
+	separators, err := regexp.Compile(`[ &_=+:]`)
+	if err == nil {
+		name = separators.ReplaceAllString(name, "-")
+	}
+	legal, err := regexp.Compile(`[^[:alnum:]-.]`)
+	if err == nil {
+		name = legal.ReplaceAllString(name, "")
+	}
+	for strings.Contains(name, "--") {
+		name = strings.Replace(name, "--", "-", -1)
+	}
+	return name
 }
