@@ -4,7 +4,7 @@ package udev
 import (
 	"os"
 
-	"github.com/bjw-s/kobomail/pkg/helpers"
+	"github.com/bjw-s-labs/kobomail/pkg/helpers"
 	"go.uber.org/zap"
 )
 

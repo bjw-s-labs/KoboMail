@@ -2,7 +2,7 @@
 package commands
 
 import (
-	"github.com/bjw-s/kobomail/internal/kobomail"
+	"github.com/bjw-s-labs/kobomail/internal/kobomail"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 )

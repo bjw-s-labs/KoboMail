@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/bjw-s/kobomail/internal/commands"
+	"github.com/bjw-s-labs/kobomail/internal/commands"
 )
 
 func main() {

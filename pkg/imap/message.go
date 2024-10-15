@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bjw-s/kobomail/pkg/helpers"
+	"github.com/bjw-s-labs/kobomail/pkg/helpers"
 	"github.com/emersion/go-imap"
 	"github.com/emersion/go-message/mail"
 	"go.uber.org/zap"

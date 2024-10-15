@@ -1,4 +1,4 @@
-module github.com/bjw-s/kobomail
+module github.com/bjw-s-labs/kobomail
 
 go 1.23.2
 

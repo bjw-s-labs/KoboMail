@@ -68,7 +68,7 @@ Quick start for Kobo devices:
 
 1. (OPTIONAL) download and install NickelDbus for increased functionality [KoboRoot.tgz](https://github.com/shermp/NickelDBus/releases/download/0.2.0/KoboRoot.tgz)
 2. (OPTIONAL) download and install NickelMenu for increased functionality [KoboRoot.tgz](https://github.com/pgaskin/NickelMenu/releases/download/v0.5.2/KoboRoot.tgz)
-3. download the latest [KoboRoot.tgz](https://github.com/bjw-s/KoboMail/releases/download/latest/KoboRoot.tgz)
+3. download the latest [KoboRoot.tgz](https://github.com/bjw-s-labs/KoboMail/releases/download/latest/KoboRoot.tgz)
 4. connect your Kobo device to your computer with a USB cable
 5. place the KoboRoot.tgz file in the .kobo directory of your Kobo device
 6. disconnect the reader

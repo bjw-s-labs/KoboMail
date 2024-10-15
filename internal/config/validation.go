@@ -2,7 +2,7 @@
 package config
 
 import (
-	"github.com/bjw-s/kobomail/pkg/helpers"
+	"github.com/bjw-s-labs/kobomail/pkg/helpers"
 	"github.com/gookit/validate"
 	"go.uber.org/zap/zapcore"
 	"golang.org/x/exp/slices"

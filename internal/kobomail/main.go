@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bjw-s/kobomail/internal/config"
-	"github.com/bjw-s/kobomail/pkg/imap"
-	"github.com/bjw-s/kobomail/pkg/nickeldbus"
-	"github.com/bjw-s/kobomail/pkg/nickelmenu"
-	"github.com/bjw-s/kobomail/pkg/nickelseries"
-	"github.com/bjw-s/kobomail/pkg/udev"
+	"github.com/bjw-s-labs/kobomail/internal/config"
+	"github.com/bjw-s-labs/kobomail/pkg/imap"
+	"github.com/bjw-s-labs/kobomail/pkg/nickeldbus"
+	"github.com/bjw-s-labs/kobomail/pkg/nickelmenu"
+	"github.com/bjw-s-labs/kobomail/pkg/nickelseries"
+	"github.com/bjw-s-labs/kobomail/pkg/udev"
 	"go.uber.org/zap"
 )
 

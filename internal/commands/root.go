@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bjw-s/kobomail/internal/config"
+	"github.com/bjw-s-labs/kobomail/internal/config"
 	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -18,7 +18,7 @@ var (
 		Use:   "kobomail",
 		Short: "KoboMail is an email attachment downloader for Kobo devices",
 		Long: `KoboMail is an email attachment downloader for Kobo devices.
-More information available at the Github Repo (https://github.com/bjw-s/KoboMail)`,
+More information available at the Github Repo (https://github.com/bjw-s-labs/KoboMail)`,
 	}
 )
 
