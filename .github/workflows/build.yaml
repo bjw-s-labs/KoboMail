@@ -39,7 +39,7 @@ jobs:
           go install github.com/mgechev/revive@latest
 
       - name: Run pre-commit
-        uses: pre-commit/action@v3.0.0
+        uses: pre-commit/action@v3.0.1
 
       - name: Prepare release
         # Create a release when a tag is pushed
