@@ -14,6 +14,11 @@ Use this software AT YOUR OWN RISK.
 
 ## Changelog
 
+**0.6.0**
+
+- Make sure the filename is sanitized before downloading
+- Updated dependencies
+
 **0.5.1**
 
 - Update the launcher with the correct command
