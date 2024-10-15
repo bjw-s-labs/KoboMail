@@ -13,10 +13,10 @@ on:
 
 jobs:
   keepalive:
-    name: Renovate
+    name: Keepalive
     uses: bjw-s/gh-workflows/.github/workflows/keepalive.yaml@main
     permissions:
       contents: write
     secrets:
-      app_id: ${{ secrets.BJWS_APP_ID }}
-      app_private_key: ${{ secrets.BJWS_APP_PRIVATE_KEY }}
+      app_id: ${{ secrets.LAB_ASSISTANT_APP_ID }}
+      app_private_key: ${{ secrets.LAB_ASSISTANT_APP_KEY }}
