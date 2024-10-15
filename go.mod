@@ -7,7 +7,7 @@ require (
 	github.com/emersion/go-message v0.18.1
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/gookit/validate v1.5.2
-	github.com/knadh/koanf/parsers/toml v0.1.0
+	github.com/knadh/koanf/parsers/toml v2.1.0
 	github.com/knadh/koanf/providers/confmap v0.1.0
 	github.com/knadh/koanf/providers/file v1.1.2
 	github.com/knadh/koanf/providers/posflag v0.1.0
