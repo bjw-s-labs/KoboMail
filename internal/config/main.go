@@ -4,7 +4,7 @@ package config
 import (
 	"encoding/json"
 
-	toml "github.com/knadh/koanf/parsers/toml"
+	toml "github.com/knadh/koanf/parsers/toml/v2"
 	"github.com/knadh/koanf/providers/confmap"
 	"github.com/knadh/koanf/providers/file"
 	"github.com/knadh/koanf/providers/posflag"
