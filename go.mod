@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	github.com/emersion/go-imap v1.2.1
-	github.com/emersion/go-message v0.18.1
+	github.com/emersion/go-message v0.18.2
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/gookit/validate v1.5.2
 	github.com/knadh/koanf/parsers/toml/v2 v2.1.0
